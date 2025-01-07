@@ -29,11 +29,7 @@ class _AddWorkshopState extends State<AddWorkshop> {
     final String date = _dateController.text;
     final String type = _selectedType;
 
-    if (address.isEmpty ||
-        workerId.isEmpty ||
-        workerName.isEmpty ||
-        clientName.isEmpty ||
-        date.isEmpty) {
+    if (address.isEmpty || workerId.isEmpty || workerName.isEmpty ||clientName.isEmpty || date.isEmpty) {
       setState(() {
         _responseMessage = 'Please fill in all fields.';
       });
